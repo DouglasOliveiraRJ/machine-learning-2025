@@ -30,10 +30,10 @@ import matplotlib.pyplot as plt
 
 plt.figure(dpi=400)
 
-tree.plot_tree(arvore, 
-               feature_names=caracteristicas,
-               class_names=arvore.classes_,
-               filled=True)
+tree.plot_tree(arvore, # é o modelo de árvore (ex: DecisionTreeClassifier).
+               feature_names=caracteristicas, # nomes das colunas (as variáveis usadas).
+               class_names=arvore.classes_, # nomes das classes (as categorias que a árvore tenta prever).
+               filled=True) # preenche os blocos da árvore com cores que ajudam a visualizar as decisões.
 
 # %%
 
